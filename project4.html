@@ -53,123 +53,113 @@
 							<div class="wrapper">
 								<div class="inner">
 
-									<p>In every organization, the workforce is its heartbeat. But understanding what keeps that heartbeat strong—or what weakens it—isn’t guesswork. It’s data work. This project was all about diving deep into HR data using pure SQL, uncovering what really drives employee satisfaction, retention, training effectiveness, and overall workforce dynamics.</p>
-                                    <p>In today’s competitive landscape, retaining top talent, understanding employee sentiment, and optimizing workforce efficiency aren’t just operational tasks—they’re strategic imperatives. Businesses that fail to listen to their workforce risk not just higher attrition, but weakened productivity and eroded culture. That’s where HR analysis steps in.</p>
-									<p>Today, companies don’t just want to know how many people left—they want to know why, when, and what can be done to prevent it. With this in mind, I used SQL as the lens to reveal trends, risks, and actionable patterns in employee behavior and performance.</p>
+									<p>Imagine you're a business owner with thousands of customers—each with unique behavior. Some buy frequently, others spend a lot in one go, while a few haven’t returned in months. But you’re treating them all the same.</p>
+								    <p>The result? Wasted marketing spend and lost loyalty. But without segmentation, you treat everyone the same and miss untapped growth and retention opportunities.</p>
+                                    <p>This project brings clarity. With Power BI as my canvas, I used RFM segmentation to group customers based on actual behavior—recency, frequency, and monetary value. I transformed transactional data into strategic action—empowering decision-makers to align marketing, engagement, and service strategies exactly where they matter most.</p>
 									
-									<h4 class="major">But how does this fit into your business puzzle?</h4>
-									<p>Companies, much like competitive teams, aim to build strong, high-performing workforces that drive long-term success. But unlike fantasy worlds, real-world growth demands data-backed decisions and a deep understanding of your people.</p>
-									<p>This is exactly where I step in—with SQL-powered HR analysis that decode what’s really happening beneath the surface.</p>
-									<ul>
-										<li>
-											<h4>Workforce Strategist:</h4>
-											<p>Just like companies want to outsmart the market, they also need to outsmart attrition. Using SQL, I help uncover which departments have the highest turnover, identify patterns in performance, and provide insights to retain top talent before it’s too late.</p>
-										</li>
-										<li>
-											<h4>Employee Whisperer:</h4>
-											<p>Knowing your workforce isn’t just about headcount—it’s about understanding behavior, sentiment, and growth potential. I segment employees by experience level, training participation, and survey feedback, helping HR teams design more personalized and effective strategies for engagement and retention.</p>
-										</li>
-										<li>
-											<h4>Performance Tuner:</h4>
-											<p>HR teams often sit on massive data lakes—from recruitment to performance reviews. But data is only useful when it tells a clear story. I use pure SQL to transform messy tables into crisp, actionable narratives that drive informed HR decisions—no guesswork, just clarity.</p>
-										</li>
-									</ul>										</ul>
+									
+									<h4 class="major">Why Segmentation Changes Everything?</h4>
+									<p>In today's hyper-competitive market, it's not just about collecting customer data—it's about understanding customer value. Businesses that segment and personalize their marketing outperform those who guess.</p>
+									<p>And that’s where this project comes in.</p>
+																		
 									
 									<h3 class="major"></h3>
 									<h2>Let's continue this journey!</h2>	
 									<p></p>	
 									
 									<h3 class="major">Objective</h3>
-									<p>To conduct an end-to-end analysis of HR data using structured SQL queries, covering core HR functions: attrition, training, performance, recruitment channels, promotions, and employee satisfaction. The goal was to convert raw datasets into business insights that can inform people strategy and HR decision-making.</p>
+									<p>To build an end-to-end Customer Segmentation Dashboard using Power BI that:</p>
+									<ul>
+										<li>Profiles customers using RFM metrics</li>
+										<li>Segments them based on behavior, not assumptions</li>
+										<li>Empowers data-driven marketing and retention strategies</li>
+										<li>Delivers visual insights that drive real-world business action</li>
+									</ul>
 
-									<h3 class="major">Chapter 1: Data Structuring & Transformation</h3>
-									<p>Before insights, comes order. I cleaned and structured the data using SQL: handling missing values, creating relational tables, and organizing datasets into employee, recruitment, training, and survey-based categories. This structured foundation enabled precise query writing and complex joins across datasets.</p>
+									<h3 class="major">Approach & Methodology</h3>
 
-                                    <h3 class="major">Chapter 2: SQL-Powered Analytics</h3>
-									<p>I wrote SQL queries—categorized as Basic to Advance, extract insights such as:</p>
+									<h3 class="major">1. Data Preparation & RFM Analysis</h3>
+									<p>I started by importing raw sales data and shaping it using Power BI’s data model.</p>
+									<ul>
+										<li>Created calculated columns for Recency, Frequency, and Monetary value using DAX										</li>
+										<li>Established relationships between customer and transaction tables										</li>
+										<li>Normalized and scored RFM metrics to define behavioral dimensions										</li>
+										<li>Created calculated tables and measures to shape the segmentation framework										</li>
+									</ul>
+
+                                    <h3 class="major">2. Power BI Clustering & Segmentation Logic</h3>
+									<ul>
+										<li>Used Power BI clustering visual to define and separate segments based on RFM scores</li>
+										<li>Divided customers into high-value, moderate, at-risk, and dormant groups										</li>
+										<li>Profiled each group based on behavior trends, revenue share, and engagement timing										</li>
+									</ul>
                                     
+									<h3 class="major">3. Interactive Dashboard & Visual Storytelling</h3>
+									<p>Built a 3-page Power BI dashboard featuring:</p>
 									<ul>
-										<li>
-											<h4>Attrition Analysis</h4>
-											<ul>
-											<li>Identified departments and job roles with the highest attrition rates</li>
-											<li>Linked promotion delays of leaving</li>
-											<li>Explored attrition over years of service</li>
-											</ul>
-										</li>
-									</ul>
-									<ul>
-										<li>
-											<h4>Performance Trends</h4>
-											<ul>
-											<li>Mapped training hours to performance ratings</li>
-											<li>Evaluated high-performing departments</li>
-											<li>Analyzed impact of previous promotions on current performance</li>
-											</ul>
-										</li>
-									</ul>
-									<ul>
-										<li>
-											<h4>Recruitment Source Effectiveness</h4>
-											<ul>
-											<li>Tracked which hiring channels brought in the best talent</li>
-											</ul>
-										</li>
-									</ul>
-									<ul>
-										<li>
-											<h4>Employee Satisfaction Insights</h4>
-											<ul>
-											<li>Correlated survey scores with attrition and promotions</li>
-											<li>Analyzed satisfaction by department, gender, and seniority level</li>
-											</ul>
-										</li>
-									</ul>
-									<ul>
-										<li>
-											<h4>Hiring source efficiency (internal vs. external recruitment)</h4>
-											<p>I used techniques like JOINS, CTEs, subqueries, GROUP BY, HAVING, and CASE statements to answer real business questions.</p>
-										</li>
+										<li>Customer Segment Overview with KPIs, segment sizes, and revenue contribution										</li>
+										<li>Customer Segment (RFM Analysis) to identify behavior patterns across groups										</li>
+										<li>Drilldown tables for marketing teams to explore high-potential customers										</li>
 									</ul>
 									
 									<h3 class="major">Key Insights</h3>
 									<ul>
 										<li>
-											<h4>Attrition Hotspots:</h4>
-											<p>Sales and HR departments had the highest attrition, with over 60% of exited employees coming from these two functions—especially those with no promotions in the past 3 years.</p>
+											<h4>High-Value Loyalists:</h4>
+											<p>Top 20% of customers contributed over 50% of revenue—ideal for loyalty rewards and personalized outreach.</p>
 										</li>
 										<li>
-											<h4>Training Works:</h4>
-											<p>Employees who completed more than 20 hours of training annually achieved, on average, 15% higher performance scores than those with less training exposure.</p>
+											<h4>Frequent Budget Buyers:											</h4>
+											<p>Regularly shop in small amounts—excellent candidates for upselling or bundling offers.											</p>
 										</li>
 										<li>
-											<h4>Promotion Delay = Exit Risk:</h4>
-											<p>Employees who had not been promoted in the last 36 months showed a 2x higher chance of attrition compared to those recently promoted.</p>
+											<h4>Infrequent Big Spenders:</h4>
+											<p>High transaction value but low frequency—potential to increase engagement through win-back campaigns.</p>
 										</li>
 										<li>
-											<h4>Satisfaction Drives Retention:</h4>
-											<p>Employees with satisfaction scores of 4.0 or above had attrition rates below 12%, while those with scores below 3.0 had rates exceeding 30%.</p>
+											<h4>Dormant (At-Risk):</h4>
+											<p>High time since last purchase—urgent need for win-back campaigns</p>
 										</li>
-										<li>
-											<h4>Hiring Source Matters:</h4>
-											<p>Referral hires demonstrated the highest retention rate (88%) and were 60% more likely to be promoted within 2 years, compared to hires from external job portals.</p>
-										</li>
-										<li>
-											<h4>Departmental Health:</h4>
-											<p>R&D and Operations departments had the strongest workforce health, with the lowest turnover (<10%), highest average satisfaction (4.2+), and above-average performance ratings.</p>
-										</li>
-										<li>
-											<h4>Engagement Score Patterns:</h4>
-											<p>Employees with rolling engagement scores above 4.0 maintained longer tenure and higher performance consistency, showing a clear link between engagement and productivity.</p>
-										</li>
+									</ul>
+
+									<h3 class="major">Key Insights</h3>
+									<p>This Power BI solution empowers businesses to:</p>
+									<ul>
+									<li>Segment audiences meaningfully									</li>
+									<li>Target marketing campaigns based on behavior and value									</li>
+									<li>Increase retention and revenue by focusing on high-impact customer groups									</li>
+									<li>Visualize segment health and marketing opportunities at a glance									</li>
+									</ul>
+									<ul>
+									<style>
+										video {
+										  max-width: 100%;
+										  max-height: 100%;
+										  height: auto;
+										  border-radius: 10px;
+										  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+										}
+									  </style>
+									  
+									  <a class="video">
+										<video autoplay muted loop playsinline>
+										  <source src="images/Customer Segmentation.mp4.mp4" type="video/mp4" />
+										  Your browser does not support the video tag.
+										</video>
+									  </a>
 									</ul>
 								
                                     
 									<h3 class="major">Final Thoughts </h3>
-										<p>This SQL-only project reflects how structured queries and relational data can power critical decisions in HR. By analyzing behavior, trends, and gaps across the employee lifecycle, I provided insights that could help businesses retain talent, boost satisfaction, and optimize internal mobility—all without needing dashboards or fancy tools.</p>
-										<p>Just clean queries. Clear answers.</p>
-									                                     
-                                    <a href="https://github.com/sameer-kumar-sahu/Employee-HR-Analytics-Project" class="special">SeSe The Project Here!</a>
+										<p>This Power BI–driven customer segmentation project demonstrates how behavioral data can move beyond dashboards to become a strategic growth tool. By applying RFM analysis and clustering, I helped translate raw customer transactions into clearly defined groups that inform smarter, more personalized business decisions.</p>
+										<p>Whether it's identifying your most loyal buyers or re-engaging dormant customers, segmentation brings focus, efficiency, and impact to your marketing and retention efforts.</p>
+										<p>It’s not just about visualizing data—it’s about understanding people through it.</p>
+									
+									  
+									
+									                                
+                                    <a href="https://github.com/sameer-kumar-sahu/Customer-Segmentation-Analysis" class="special">See The Project Here!</a>
+									
 
                     
 								</div>
