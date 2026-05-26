@@ -1,0 +1,551 @@
+<!DOCTYPE HTML>
+<!--
+	Data Analyst Portfolio
+	ssameerkumar037@gmail.com
+-->
+<html>
+	<head>
+		<title>Data Analyst Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">DATA ANALYST PORTFOLIO</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="aboutme.html">About Me</a></li>
+								<li><a href="experience.html">Experience</a></li>
+								<li><a href="projects.html">Projects</a></li>
+								<li><a href="#footer">Contact</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								
+								<h2>Project-1</h2>
+								<h3>Global Economic Analytics Pipeline || Python, MySQL, Machine Learning & Power BI </h3>
+                                <h4>Building an End-to-End Analytics Engineering & Business Intelligence System </h4>
+								<p></p>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+									
+									<p>Modern analytics systems require more than dashboards. Businesses need scalable workflows capable of collecting, transforming, storing, forecasting, and visualizing data in a reliable and automated way. </p>
+
+                                    <p>This project was developed as an end-to-end analytics engineering and business intelligence system that automates the extraction of global economic indicators from the World Bank API, processes the data through ETL pipelines, stores it in a dimensional MySQL architecture, applies machine learning forecasting, and delivers interactive reporting through Power BI. </p>
+                                    
+									<h3 class="major">System Objective</h3>
+
+                                    <p>
+                                    The objective of this project was to design and implement a scalable analytics pipeline capable of:
+                                    </p>
+
+                                    <ul>
+                                    <li>Automating multi-country economic data extraction</li>
+                                    <li>Building ETL workflows using Python</li>
+                                    <li>Implementing star schema dimensional modeling</li>
+                                    <li>Performing advanced SQL analytics</li>
+                                    <li>Generating machine learning forecasts</li>
+                                    <li>Creating Power BI reporting dashboards</li>
+                                    <li>Applying Row-Level Security (RLS)</li>
+                                    <li>Establish lightweight CI workflows using GitHub Actions</li>
+                                    </ul>
+
+                                    <p>The project was developed to simulate a real-world analytics engineering workflow where data pipelines, database systems, forecasting models, and reporting layers work together to support scalable business intelligence and data-driven decision making. </p>
+									</p>
+
+									<h3 class="major"></h3>
+									<h2>Let’s unpack the layers together.</h2>
+									<p></p>	
+
+									<h3 class="major">Analytics Architecture</h3>
+
+                                    <p>The project follows a modular analytics architecture designed to support automated ingestion, transformation, forecasting, storage, and reporting workflows. </p>
+
+                                    <pre>
+World Bank API
+        ↓
+Python ETL Pipeline
+        ↓
+Transformation Layer
+        ↓
+MySQL Database
+        ↓
+Star Schema Modeling
+        ↓
+Machine Learning Forecasting
+        ↓
+Power BI Reporting Layer
+</pre>
+
+                                    <h3 class="major">ETL & Data Engineering Workflow</h3>
+
+                                    <p>Using Python, Pandas, and REST APIs, the ETL pipeline automates the extraction and transformation of historical economic indicators including GDP, Inflation, and Population data across multiple countries. </p>
+
+<ul>
+<li>API integration using Python requests</li>
+<li>Automated multi-country extraction</li>
+<li>Null handling and data cleaning</li>
+<li>CSV staging workflows</li>
+<li>Structured loading into MySQL using SQLAlchemy</li>
+<li>Automated pipeline execution</li>
+</ul>
+
+									<h3 class="major">Database & Dimensional Modeling</h3>
+
+                                    <p> A dimensional star schema architecture was implemented in MySQL to optimize analytical querying and reporting performance. </p>
+
+<ul>
+<li>dim_country</li>
+<li>dim_indicator</li>
+<li>fact_economic_data</li>
+<li>economic_data</li>
+<li>economic_forecast</li>
+</ul>
+
+<p>
+The dimensional model separates descriptive business entities from measurable economic metrics, enabling scalable business intelligence workflows.
+</p>
+
+<a class="image">
+    <img src="images/0.png" alt="" />
+</a>
+
+<a class="image">
+    <img src="images/0.1.png" alt=""  style="margin-bottom: 30px;" />
+</a>
+
+									
+                                    <h3 class="major">Advanced SQL Analytics Engine</h3>
+
+<p>
+The SQL layer functioned as the analytical core of the system, transforming raw economic datasets and forecast outputs into structured business intelligence insights through advanced querying and dimensional reporting techniques.
+</p>
+
+<p>
+Using MySQL, I developed analytical workflows capable of comparing historical and forecasted GDP trends, identifying economic ranking changes, evaluating inflation volatility, and validating dimensional relationships across the star schema architecture.
+</p>
+
+<ul>
+<li>Implemented Common Table Expressions (CTEs) for modular analytical querying workflows</li>
+<li>Used Window Functions and RANK() operations for country-level economic ranking analysis</li>
+<li>Performed actual vs forecast GDP comparison analytics</li>
+<li>Developed dimensional joins between fact and forecast tables</li>
+<li>Built ranking-based economic trend analysis workflows</li>
+<li>Created inflation peak detection queries using partitioned ranking logic</li>
+<li>Integrated machine learning forecast outputs into SQL analytical reporting</li>
+<li>Optimized reporting workflows using star schema relationships</li>
+</ul>
+
+<p>
+One analytical workflow compares the latest actual GDP values against machine learning forecast projections to calculate GDP difference percentages and identify countries expected to experience future economic expansion or contraction.
+</p>
+
+<p>
+Another workflow uses Window Functions and ranking analysis to evaluate how country-level GDP positions may change in future forecast periods. This allows the system to identify projected economic ranking shifts across major economies.
+</p>
+
+<p>
+Additional SQL workflows analyze inflation volatility by detecting the highest historical inflation years per country, helping identify periods of economic instability and macroeconomic disruption.
+</p>
+
+<p>
+Rather than functioning as isolated SQL scripts, the analytics engine was integrated directly into the ETL and reporting architecture, enabling forecast-aware business intelligence reporting and dimensional economic analysis.
+</p>
+
+<a class="image">
+    <img src="images/5.png" alt="" />
+</a>
+
+<a class="image">
+    <img src="images/5.1.png" alt="" style="margin-bottom: 15px;" />
+</a>
+
+<a class="image">
+    <img src="images/6.png" alt="" />
+</a>
+
+<a class="image">
+    <img src="images/6.1.png" alt="" style="margin-bottom: 15px;" />
+</a>
+
+<a class="image">
+    <img src="images/7.png" alt="" />
+</a>
+
+<a class="image">
+    <img src="images/7.1.png" alt="" style="margin-bottom: 15px;"/>
+</a>
+
+								<h3 class="major">Machine Learning Forecasting Layer</h3>
+
+<p>
+Linear Regression models were implemented using Scikit-learn to forecast GDP and population trends based on historical economic indicators.
+</p>
+
+<p>
+Forecast outputs are stored directly in MySQL and integrated into SQL analytics and Power BI reporting workflows.
+</p>
+
+<a class="image">
+    <img src="images/ML.png" alt="" style="margin-bottom: 30px;"/>
+</a>
+
+									<h3 class="major">Business Intelligence Reporting Layer</h3>
+
+<p>
+The final reporting layer was developed in Power BI to transform processed economic datasets into interactive business intelligence dashboards capable of supporting macroeconomic analysis, country-level comparison, trend evaluation, and forecast-driven reporting.
+</p>
+
+<p>
+The reporting environment was designed as a multi-page analytical dashboard system combining KPI monitoring, dimensional filtering, trend visualization, role-based access control, and executive reporting workflows.
+</p>
+
+<ul>
+<li>Developed interactive multi-page Power BI dashboards</li>
+<li>Integrated MySQL analytical tables directly into Power BI</li>
+<li>Built KPI-driven reporting workflows for GDP, Inflation, and Population analytics</li>
+<li>Implemented dynamic country and year filtering using slicers</li>
+<li>Created trend analysis dashboards for long-term economic evaluation</li>
+<li>Designed ranking and contribution analysis visuals</li>
+<li>Applied Row-Level Security (RLS) for role-based dashboard governance</li>
+<li>Integrated machine learning forecast outputs into analytical reporting workflows</li>
+</ul>
+
+
+<h4>Page 1 : Executive Overview Dashboard</h4>
+
+<p>
+The Executive Overview dashboard provides a consolidated macroeconomic summary across major economies, allowing users to analyze GDP, inflation, and population trends from a single reporting interface.
+</p>
+
+<p>
+The dashboard includes KPI cards for:
+</p>
+
+<ul>
+<li>Latest Global GDP</li>
+<li>Total Population</li>
+<li>Average Inflation</li>
+<li>Total Countries Tracked</li>
+</ul>
+
+<p>
+Interactive slicers allow users to dynamically filter data by country, indicator, and historical year range. Trend analysis visuals compare GDP growth trajectories across multiple countries, while supporting charts evaluate population rankings, GDP growth efficiency, and inflation behavior over time.
+</p>
+
+<p>
+The Executive Overview page functions as a centralized monitoring layer designed for high-level economic comparison and exploratory business intelligence analysis.
+</p>  
+<style>
+												img {
+												  max-width: 100%;
+												  max-height: 100%;
+												  height: auto;
+												}
+											</style>
+<a class="image">
+    <img src="images/1.png" alt="" />
+</a>
+
+<a class="image">
+    <img src="images/1.1.png" alt="" style="margin-bottom: 15px;"/>
+</a>                         
+
+                                   <h4>Page 2 : GDP Analysis Dashboard</h4>
+
+<p>
+The GDP Analysis dashboard focuses on long-term economic growth evaluation and country-level GDP comparison across historical periods.
+</p>
+
+<p>
+The dashboard includes KPI metrics such as:
+</p>
+
+<ul>
+<li>Highest GDP</li>
+<li>Average GDP</li>
+<li>GDP Growth Percentage</li>
+<li>GDP Growth Since 2000</li>
+</ul>
+
+<p>
+The trend analysis line chart visualizes GDP expansion patterns from 1960–2024, allowing users to identify long-term economic acceleration and country-level growth divergence.
+</p>
+
+<p>
+Additional visuals include:
+</p>
+
+<ul>
+<li>GDP CAGR comparison analysis</li>
+<li>Top economies by latest GDP values</li>
+<li>GDP share distribution using treemap visualizations</li>
+<li>Growth efficiency tables comparing historical and latest GDP performance</li>
+</ul>
+
+<p>
+This reporting layer helps evaluate relative economic dominance, long-term growth sustainability, and global GDP contribution patterns across major economies.
+</p>
+<style>
+												img {
+												  max-width: 100%;
+												  max-height: 100%;
+												  height: auto;
+												}
+											</style>
+<a class="image">
+    <img src="images/2.png" alt="" />
+</a>
+
+<a class="image">
+    <img src="images/2.1.png" alt="" style="margin-bottom: 15px;"/>
+</a>
+
+<h4>Page 3 :  Global Inflation Analysis Dashboard</h4>
+
+<p>
+The Inflation Analysis dashboard was designed to evaluate historical inflation volatility, economic instability periods, and country-level inflation behavior across multiple decades.
+</p>
+
+<p>
+Key KPI metrics include:
+</p>
+
+<ul>
+<li>Maximum Historical Inflation</li>
+<li>Latest Inflation Rate</li>
+<li>Average Inflation Rate</li>
+<li>Inflation Volatility Index</li>
+</ul>
+
+<p>
+The dashboard visualizes inflation movement trends over time using multi-country line charts, enabling comparative analysis of inflation spikes and long-term price stability patterns.
+</p>
+
+<p>
+Additional analytical visuals include:
+</p>
+
+<ul>
+<li>Average inflation comparison by country</li>
+<li>Highest historical inflation peak analysis</li>
+<li>Recent inflation distribution comparison (2010–2024)</li>
+<li>Country-level inflation ranking tables</li>
+</ul>
+
+<p>
+This dashboard enables users to identify periods of economic instability, compare inflation control efficiency across countries, and evaluate post-crisis inflation behavior using interactive analytical reporting.
+</p>
+<style>
+												img {
+												  max-width: 100%;
+												  max-height: 100%;
+												  height: auto;
+												}
+											</style>
+<a class="image">
+    <img src="images/3.png" alt="" />
+</a>
+
+<a class="image">
+    <img src="images/3.1.png" alt="" style="margin-bottom: 15px;"/>
+</a>
+
+<h4>Page 4 :  Global Population Analysis Dashboard</h4>
+
+<p>
+The Population Analysis dashboard focuses on long-term demographic expansion, population contribution analysis, and country-level population growth evaluation.
+</p>
+
+<p>
+The dashboard includes KPI metrics such as:
+</p>
+
+<ul>
+<li>Latest Population</li>
+<li>Population CAGR</li>
+<li>Average Population</li>
+<li>Population Growth Percentage</li>
+<li>Fastest Growing Country</li>
+</ul>
+
+<p>
+Trend analysis visuals compare historical population growth trajectories across major economies from 1960–2024, enabling evaluation of demographic acceleration and long-term population expansion patterns.
+</p>
+
+<p>
+Additional visuals include:
+</p>
+
+<ul>
+<li>Population ranking comparison by country</li>
+<li>Population contribution analysis over time</li>
+<li>Population share distribution using donut charts</li>
+<li>Country-level demographic trend analysis</li>
+</ul>
+
+<p>
+The reporting layer helps identify demographic dominance, long-term population growth efficiency, and shifting global population distribution patterns across major economies.
+</p>
+<style>
+												img {
+												  max-width: 100%;
+												  max-height: 100%;
+												  height: auto;
+												}
+											</style>
+<a class="image">
+    <img src="images/4.png" alt="" />
+</a>
+
+<a class="image">
+    <img src="images/4.1.png" alt="" style="margin-bottom: 15px;"/>
+</a>
+
+<h3 class="major">Governance & Access Control</h3>
+
+<p>
+To simulate enterprise-grade dashboard governance, Row-Level Security (RLS) was implemented within Power BI to restrict country-level visibility based on analyst roles.
+</p>
+
+<p>
+Separate analyst roles were configured for different countries, ensuring users could only access the economic data relevant to their assigned region.
+</p>
+
+<p>
+For example:
+</p>
+
+<pre>
+[country] = "United States"
+</pre>
+
+<p>
+The RLS implementation demonstrates practical knowledge of dashboard governance, role-based access control, and secure business intelligence reporting workflows commonly used in enterprise analytics environments.
+</p>
+<style>
+												img {
+												  max-width: 100%;
+												  max-height: 100%;
+												  height: auto;
+												}
+											</style>
+<a class="image">
+    <img src="images/RLS.png" alt="" />
+</a>
+
+<a class="image">
+    <img src="images/RLS.1.png" alt="" style="margin-bottom: 15px;"/>
+</a>
+
+<h3 class="major">CI Workflow & Version Control</h3>
+
+<p>
+GitHub Actions was configured to validate Python scripts during repository updates, establishing a lightweight CI workflow for pipeline verification and version control management.
+</p>
+
+<h3 class="major">Engineering Challenges & Problem Solving</h3>
+
+<p>
+Key challenges included resolving foreign key conflicts during dimensional loading, handling duplicate dimension records, maintaining schema consistency across ETL execution cycles, and integrating forecasting outputs into relational workflows.
+</p>
+									<h3 class="major">Conclusion: </h3>
+									<p>This project demonstrates practical analytics engineering capabilities across ETL development, SQL analytics, dimensional modeling, machine learning forecasting, business intelligence reporting, workflow automation, and data governance.</p>
+
+									<h3 class="major">Why This Project Matters</h3>
+
+<p>
+Modern organizations require more than static dashboards and spreadsheet reporting. They need scalable analytics systems capable of continuously collecting, transforming, analyzing, and visualizing data in a reliable and automated way.
+</p>
+
+<p>
+This project demonstrates the development of a complete analytics engineering and business intelligence workflow — combining ETL pipelines, database engineering, SQL analytics, machine learning forecasting, and Power BI reporting into a unified data system.
+</p>
+
+<p>
+Rather than focusing only on visualization, the project emphasizes the full analytics lifecycle:
+</p>
+
+<ul>
+<li>Automated data ingestion from APIs</li>
+<li>Data transformation and validation</li>
+<li>Dimensional database modeling</li>
+<li>Advanced SQL analytics</li>
+<li>Forecast generation using Machine Learning</li>
+<li>Interactive BI reporting and governance</li>
+</ul>
+
+<p>
+This project reflects my ability to design practical, end-to-end analytics solutions that bridge data engineering, analytics, and business intelligence into a scalable decision-support system.
+</p>
+									
+                                    <a href="https://github.com/sameer-kumar-sahu/global-economic-analytics-pipeline" class="special">See The Project here!</a>
+                                    
+
+									
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+				<section id="footer">
+					<div class="inner">
+						<h2 class="major">Get in touch</h2>
+						<p>Let's chat! Your data, my brain - together we can be unstoppable.</p>
+						<ul class="contact">
+							<li class="icon solid fa-home">
+								India (Open for Relocation) <br />
+								
+							</li>
+							
+							<li class="icon solid fa-envelope"><a href="mailto:ssameerkumar037@gmail.com">ssameerkumar037@gmail.com</a></li>
+							<li class="icon brands fa-github"><a href="https://github.com/sameer-kumar-sahu">github.com/sameer-kumar-sahu</a></li>
+							<li class="icon brands fa-linkedin-in"><a href="https://www.linkedin.com/in/sameer-kumar-sahu/">linkedin.com/in/sameer-kumar-sahu/</a></li>
+							
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Portfolio. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
